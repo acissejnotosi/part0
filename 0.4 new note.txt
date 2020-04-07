@@ -1,0 +1,16 @@
+browser->server:HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+server-->browser: HTTP status code 302 
+
+Note: Server asks the browser to do a new HTTP GET request to the address defined in the header's Location - the address notes.
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+server-->browser: HTML Doc
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+server-->browser: main.js
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+server-->browser: main.css
+
+broswer->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server--> browser: data.json
